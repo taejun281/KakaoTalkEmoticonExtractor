@@ -1,9 +1,7 @@
 import frida
 import sys
 import time
-import io
 import os
-import decode
 
 def read(path):
     with open(path, "r") as f:
@@ -13,7 +11,7 @@ def read(path):
 device = frida.get_usb_device()
 pid = device.spawn(["com.kakao.talk"])
 session = device.attach(pid)
-script = session.create_script(read("e.js"))
+script = session.create_script(read("script.js"))
 
 script.load()
 
