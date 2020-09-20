@@ -1,4 +1,4 @@
 # KakaoTalkEmoticonExtractor
-Extract KakaoTalk Emoticon with FRIDA (Android only)
+Extract KakaoTalk Emoticon with FRIDA
 
 create directory /sdcard/emoticons/
